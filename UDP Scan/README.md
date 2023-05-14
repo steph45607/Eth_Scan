@@ -25,4 +25,18 @@ Once you have finished configuring the devices in your testbed, save the project
 ### Test Connectivity
 Verify connectivity between the devices by pinging the IP addresses of each device. You can also use other network diagnostic tools to troubleshoot and test your network configuration.
 
+## 3. UDP scan with Nmap
+```
+nmap -sU <ip>
+nmap -sU -p <port> <ip>
+```
 
+## 4. Iptables prevention
+```
+iptables -A INPUT -p udp -j DROP
+```
+to reset (flush and delete chains)
+```
+iptables -F
+iptables -X
+```
