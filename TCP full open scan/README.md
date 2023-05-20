@@ -1,4 +1,7 @@
 #TCP Full Open Scan
+*Arish Madataly - 2502049706
+*Leonardo Richie - 2502005856
+*Raissa Azaria - 2502005805
 
 ## 1. Install GNS3
 For this tutorial, we will be using GNS3 to make the testbed
