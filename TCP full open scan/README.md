@@ -1,7 +1,7 @@
-#TCP Full Open Scan
-  *Arish Madataly - 2502049706
-  *Leonardo Richie - 2502005856
-  *Raissa Azaria - 2502005805
+# ICMP Scanning
+* Arish Madataly (2502049706) L4AC
+* Leonardo Richie (2502005856) L4AC
+* Raissa Azaria (2502005805) L4AC
 
 ## 1. Install GNS3
 For this tutorial, we will be using GNS3 to make the testbed
