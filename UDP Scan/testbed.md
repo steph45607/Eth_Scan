@@ -10,6 +10,8 @@ What you need to make this testbed are:
 - 1 ROUTER
 - 2 Kali Linux CLI
 
+The reason why we use a router instead of a switch, we want to test nmap when the scenario is that the end devices have different subnet, but they are still connected in a network.
+
 if you are unable to do NAT (you have some error with libvir).
 
 Do this:
