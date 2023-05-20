@@ -28,3 +28,12 @@ Connect the devices together by dragging a cable from the output port of one dev
 Once you have finished configuring the devices in your testbed, save the project. Then, click on the "Play" button to start the simulation. This will open a terminal for each device
 
 ### Connect Devices & Configure Devices
+-allow the router to connect to the internet by adding the 192.168.122.1 route to it
+-confirm by attempting to ping 1.1.1.1
+-assign an ip address to the first kali Linux CLI in eth0: in our example 192.168.14.2
+-assign an ip address to the second kali Linux CLI in eth0: in our example 192.168.15.2
+-allow these subnets into the router by adding them to its ip table
+-make sure this work by pinging the 192.168.14.1 from CLI 1 and 192.168.15.1 from CLI 2
+-add 192.168.15.1  as a default gateway via dev eth0 in CLI 2 and add 192.168.14.1  as a default gateway via dev eth0
+-now to allow the internet to send back a reply, you need to add the subnets into your host machine
+-so now if your network firewall allows it, you should be able to ping the internet
