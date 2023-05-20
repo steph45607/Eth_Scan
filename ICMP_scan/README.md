@@ -1,1 +1,53 @@
+# ICMP Scanning
 
+## 1. Install GNS3
+For this tutorial, we will be using GNS3 to make the testbed
+
+**Refer to this link for a GNS3 installation tutorial:** <br />
+https://mariaclarinblog.notion.site/Computer-Networks-550616572d154cb68cceead03c482703 
+https://compnetwilliambinus.blogspot.com/2023/04/tutorial-gns3-in-ubuntu-2204.html
+
+## 2. Making a testbed
+### Create a New Project
+Open GNS3 and create a new project. You can do this by clicking on "File" -> "New Blank Project".
+
+### Add Devices to the Project
+Drag and drop the devices you want to use into the main GNS3 workspace.
+The devices we use for this testbed are:
+* 2 Kali Linux CLI
+* 1 Router
+* 1 NAT
+
+### Connect Devices
+Connect the devices together by dragging a cable from the output port of one device to the input port of another.
+
+### Configure Devices
+Double-click on a device to open the configuration window. From here, you can configure the device's settings, such as IP addresses, subnet masks, and other network parameters.
+
+### Save and Run the Testbed 
+Once you have finished configuring the devices in your testbed, save the project. Then, click on the "Play" button to start the simulation.
+
+### Test Connectivity
+Verify connectivity between the devices by pinging the IP addresses of each device. You can also use other network diagnostic tools to troubleshoot and test your network configuration.
+
+## 3. ICMP scan/host discovery with Nmap
+To conduct ICMP Scan or host discovery with Nmap, type the following command in the terminal of one of the Kali Linux CLI
+```
+nmap -sn <ip address>
+```
+After this command, check the terminal and the Nmap command will work immediately and shows the number of hosts that are up, indicating that they responds to our ICMP packets sent to them via the ICMP Scanning.
+
+## 4. ICMP scan iptables prevention
+To check your machine's iptables setup, type the following command in the terminal of one of the Kali Linux CLI (this will be your machine that will be protected from ICMP scanning via iptables)
+```
+iptables  -L --line-numbers
+```
+Then type the following command to activate the ICMP drop command with iptables 
+```
+iptables -A INPUT -p icmp -j DROP
+```
+You can then check again the line numbers of your iptables setup on the machine. To test if the iptables command is working, use the other Kali Linux CLI that is connected to the protected CLI and try to ping the protected CLI
+```
+ping <ip address>
+```
+The ping command will then no longer work and you will see the ICMP protocol captures in wireshark. 
