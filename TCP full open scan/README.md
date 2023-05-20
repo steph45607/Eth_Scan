@@ -15,18 +15,16 @@ Open GNS3 and create a new project. You can do this by clicking on "File" -> "Ne
 
 ### Add Devices to the Project
 Drag and drop the devices you want to use into the main GNS3 workspace.
-
-### Connect Devices
-Connect the devices together by dragging a cable from the output port of one device to the input port of another.
-
-### Add Devices to the Project
-Drag and drop the devices you want to use into the main GNS3 workspace.
 The devices we use for this testbed are:
 * 2 Kali Linux CLI
 * 1 Router
 * 1 NAT
 
+### Connect Devices
+Connect the devices together by dragging a cable from the output port of one device to the input port of another.
+
+
 ### Save and Run the Testbed 
-Once you have finished configuring the devices in your testbed, save the project. Then, click on the "Play" button to start the simulation.
+Once you have finished configuring the devices in your testbed, save the project. Then, click on the "Play" button to start the simulation. This will open a terminal for each device
 
 ### Connect Devices & Configure Devices
