@@ -1,4 +1,7 @@
 # ICMP Scanning
+* Maria Clarin (2501990331) L4AC
+* Ferdinand Jacques (2501982600) L4AC
+* William Jonathan Mulyadi (2502045683) L4AC
 
 ## 1. Install GNS3
 For this tutorial, we will be using GNS3 to make the testbed
@@ -62,9 +65,11 @@ Machine 1:
 ```
 
 
-
 ### Test Connectivity
 Verify connectivity between the devices by pinging the IP addresses of each device. You can also use other network diagnostic tools to troubleshoot and test your network configuration.
+```
+ping <ip address>
+```
 
 ## 3. ICMP scan/host discovery with Nmap
 To conduct ICMP Scan or host discovery with Nmap, type the following command in the terminal of one of the Kali Linux CLI
@@ -87,3 +92,14 @@ You can then check again the line numbers of your iptables setup on the machine.
 ping <ip address>
 ```
 The ping command will then no longer work and you will see the ICMP protocol captures in wireshark. 
+
+
+## Documentation 
+### Topology
+<img src ="https://cdn.discordapp.com/attachments/893045813851353108/1109463093693644901/image.png">
+
+### Nmap
+<img src ="https://cdn.discordapp.com/attachments/893045813851353108/1109463093693644901/image.png">
+
+### Iptables 
+<img src ="https://cdn.discordapp.com/attachments/1109440293188681738/1109456309604077689/image.png">
