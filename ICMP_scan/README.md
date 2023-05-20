@@ -99,7 +99,7 @@ The ping command will then no longer work and you will see the ICMP protocol cap
 <img src ="https://cdn.discordapp.com/attachments/893045813851353108/1109463093693644901/image.png">
 
 ### Nmap
-<img src ="https://cdn.discordapp.com/attachments/893045813851353108/1109463093693644901/image.png">
+<img src="https://cdn.discordapp.com/attachments/1109440293188681738/1109457941708406864/image.png">
 
 ### Iptables 
 <img src ="https://cdn.discordapp.com/attachments/1109440293188681738/1109456309604077689/image.png">
