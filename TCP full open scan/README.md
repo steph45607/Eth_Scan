@@ -40,10 +40,10 @@ Configuration of the test bed:
 9. So now if your network firewall allows it, you should be able to ping the internet
 
 ### list of command for nmap:
--nmap -T4 -sT -p80 192.168.20.2 --> to scan port 80 with TCP full scan
--iptables -F --> flush iptables
--iptables -X --> erase user-defined chain 
+-nmap -T4 -sT -p80 192.168.20.2 --> to scan port 80 with TCP full scan <br />
+-iptables -F --> flush iptables <br />
+-iptables -X --> erase user-defined chain  <br />
 ### Testing the nmap:
--open port 80 on target machine by running a web server: python -m SimpleHTTPServer 80
--listen to that port using nmap
--capture the traffic with wireshar
+-open port 80 on target machine by running a web server: python -m SimpleHTTPServer 80 <br />
+-listen to that port using nmap <br />
+-capture the traffic with wireshar <br />
