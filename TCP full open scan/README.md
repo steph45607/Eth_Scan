@@ -38,4 +38,12 @@ Configuration of the test bed:
 7. Add 192.168.15.1  as a default gateway via dev eth0 in CLI 2 and add 192.168.10.1  as a default gateway via dev eth0
 8. Now to allow the internet to send back a reply, you need to add the subnets into your host machine
 9. So now if your network firewall allows it, you should be able to ping the internet
-test
+
+### list of command for nmap:
+-nmap -T4 -sT -p80 192.168.20.2 --> to scan port 80 with TCP full scan
+-iptables -F --> flush iptables
+-iptables -X --> erase user-defined chain 
+### Testing the nmap:
+-open port 80 on target machine by running a web server: python -m SimpleHTTPServer 80
+-listen to that port using nmap
+-capture the traffic with wireshar
