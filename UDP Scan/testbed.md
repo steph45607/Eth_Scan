@@ -95,7 +95,7 @@ end
 ```
 In your **Kali CLI**
 ```
-ip add a <kaliIP.2>
+ip add a <kaliIP.2>/24 dev <kali interface, eth0>
 ping <kaliIP.1> 
 # this is not supposed to work
 ping 1.1.1.1
@@ -125,6 +125,7 @@ show ip nat statistics
 ```
 
 try to `ping 1.1.1.1` from your Kali while you have your wireshark open, you can see that it's actually requesting from the router IP not the Kali's IP
+
 ![Wireshark Kali request NAT with Router IP](docs/NATRequest.png)
 
 ---
