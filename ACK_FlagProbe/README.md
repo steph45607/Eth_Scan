@@ -6,6 +6,7 @@
 <br>
 
 # What is ACK Flag Probe?
+Refer to this docs:
 
 <br>
 <br>
@@ -56,11 +57,11 @@ Download Iptables Commands:
 ```
 $ sudo apt-get install iptables 
 ```
-### Using the ACK FlagProbe with Nmap:
+Using the ACK FlagProbe with Nmap:
 ```
 nmap -sA -T4 <ip address>
 ```
-### Using the Iptables to prevent the ACK FlagProbe:
+Using the Iptables to prevent the ACK FlagProbe:
 ```
 iptables  -A INPUT -p tcp --tcp-flags ACK ACK -j DROP
 ```
