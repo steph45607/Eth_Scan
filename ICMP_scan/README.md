@@ -96,7 +96,7 @@ The ping command will then no longer work and you will see the ICMP protocol cap
 
 ## Documentation 
 ### Topology
-<img src ="https://cdn.discordapp.com/attachments/893045813851353108/1109463093693644901/image.png">
+<img src ="https://cdn.discordapp.com/attachments/1109440293188681738/1110088457604313108/image.png">
 
 ### Nmap
 <img src="https://cdn.discordapp.com/attachments/1109440293188681738/1110088347273134161/image.png">
