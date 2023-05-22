@@ -1,4 +1,4 @@
-# ICMP Scanning
+# TCP FULL Scan
 * Arish Madataly (2502049706) L4AC
 * Leonardo Richie (2502005856) L4AC
 * Raissa Azaria (2502005805) L4AC
