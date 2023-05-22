@@ -53,7 +53,7 @@ Configuration of the test bed:
 <img src="https://cdn.discordapp.com/attachments/1109466596738613291/1109845230502547617/image.png">
 
 ## Before IP table config
-<img src="https://cdn.discordapp.com/attachments/1109466596738613291/1109845230502547617/image.png">
+<img src="https://cdn.discordapp.com/attachments/1109466596738613291/1109857218653868133/image.png">
 
 ## After IP table config
 <img src ="https://cdn.discordapp.com/attachments/1109466596738613291/1109855577540136980/image.png">
