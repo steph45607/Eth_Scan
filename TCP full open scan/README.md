@@ -47,3 +47,20 @@ Configuration of the test bed:
 -open port 80 on target machine by running a web server: python -m SimpleHTTPServer 80 <br />
 -listen to that port using nmap <br />
 -capture the traffic with wireshar <br />
+
+## Documentation
+### Topology
+<img src="https://cdn.discordapp.com/attachments/1109466596738613291/1109845230502547617/image.png">
+
+## Before IP table config
+<img src="https://cdn.discordapp.com/attachments/1109466596738613291/1109845230502547617/image.png">
+
+## After IP table config
+<img src ="https://cdn.discordapp.com/attachments/1109466596738613291/1109855577540136980/image.png">
+
+## Result of nmap before iptable
+<img src ="https://cdn.discordapp.com/attachments/1109466596738613291/1109902015884173372/image.png">
+
+## Result of nmap after iptable 
+<img src ="https://cdn.discordapp.com/attachments/1109466596738613291/1109902285611483147/image.png">
+        
