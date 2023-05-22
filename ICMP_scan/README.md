@@ -18,8 +18,8 @@ Open GNS3 and create a new project. You can do this by clicking on "File" -> "Ne
 Drag and drop the devices you want to use into the main GNS3 workspace.
 The devices we use for this testbed are:
 * 2 Kali Linux CLI
-* 1 Router
-* 1 NAT
+* 1 Switch
+
 ### Save and Run the Testbed 
 Once you have finished configuring the devices in your testbed, save the project. Then, click on the "Play" button to start the simulation.
 
@@ -99,7 +99,7 @@ The ping command will then no longer work and you will see the ICMP protocol cap
 <img src ="https://cdn.discordapp.com/attachments/893045813851353108/1109463093693644901/image.png">
 
 ### Nmap
-<img src="https://cdn.discordapp.com/attachments/1109440293188681738/1109457941708406864/image.png">
+<img src="https://cdn.discordapp.com/attachments/1109440293188681738/1110088347273134161/image.png">
 
 ### Iptables 
 <img src ="https://cdn.discordapp.com/attachments/1109440293188681738/1109456309604077689/image.png">
