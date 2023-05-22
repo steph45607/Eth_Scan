@@ -8,7 +8,8 @@ https://staniswinata.notion.site/GNS3-Installation-on-Ubuntu-22-04-21556bbde7224
 What you need to make this testbed are:
 - 1 NAT
 - 1 ROUTER
-- 2 Kali Linux CLI
+- 1 Kali Linux CLI
+- 1 Ubuntu as DNS-Server
 
 The reason why we use a router instead of a switch, we want to test nmap when the scenario is that the end devices have different subnet, but they are still connected in a network.
 
@@ -128,6 +129,15 @@ try to `ping 1.1.1.1` from your Kali while you have your wireshark open, you can
 
 ![Wireshark Kali request NAT with Router IP](docs/NATRequest.png)
 
+## 5. Make ubuntu as DNS-Server
+```
+ifconfig <ubuntu interface> <ubuntu ip> netmask 255.255.255.0
+```
+then you want to add the route default and install bind9
+```
+apt update
+apt install bind9
+```
 ---
 Note:
 
