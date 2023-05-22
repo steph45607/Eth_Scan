@@ -10,7 +10,7 @@ TCP half open scan is a fast and sneaky scan that tries to find potential open p
 TCP half open scan starts by sending a SYN packet to initiate a communication and establish a connection between the two which on an open port would result in a response of a SYN and ACK packet sending back syncronization and an acknowledgement after this process has been completed instead of sending another ACK packet to complete the TCP connection the attacker would send an RST packet that indicates that they will no longer accept or recieve any more data (basically shuts down the connection). 
 ![image](https://github.com/steph45607/Eth_Scan/blob/main/TCP%20half%20open%20scan/image/illustration.png)
 On a closed port the attacker using TCP half open scan would not get a SYN packet back from the target instead they would recieve an RST packet 
-![image](https://github.com/steph45607/Eth_Scan/tree/main/TCP%20half%20open%20scan/image)
+![image](https://github.com/steph45607/Eth_Scan/blob/main/TCP%20half%20open%20scan/image/illustration(1).png)
 
 ## TCP half open scan with Nmap
 sudo nmap -sS <target>
