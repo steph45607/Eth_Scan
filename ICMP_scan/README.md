@@ -27,49 +27,26 @@ Once you have finished configuring the devices in your testbed, save the project
 Machine 1:
 ```
 > ip a add nya : 192.168.14.2/24 dev eth0
+> ip route add 192.168.15.0/24 dev eth0
 ```
 Machine 2:
 ```
 > ip nya : 192.168.15.2/24 dev eth0
-```
-Router: 
-```
-> config t
-> interface f0/0
-> ip add 192.168.14.1 255.255.255.0
-> no shut
-> end
-
-> config t
-> interface f1/0
-> ip add 192.168.15.1 255.255.255.0
-> no shut
-> end
-```
-To show the ip interface connected!
-```
-> show ip interface brief
-```
-Machine 2:
-```
 > ip route add 192.168.14.0/24 dev eth0
 ```
-Machine 1:
-```
-> ip route show
-> ip route add 192.168.15.0/24 dev eth0
-> ip route show
-// CAPTURE USING WIRESHARK on the cable machine1 to the router
-> ping 192.168.15.1 -c 1
-//protocol will change to ICMP, there will be request and reply; ICMP means it is connected
-```
-
 
 ### Test Connectivity
 Verify connectivity between the devices by pinging the IP addresses of each device. You can also use other network diagnostic tools to troubleshoot and test your network configuration.
+
+Machine 1:
 ```
-ping <ip address>
+> ping 192.168.15.2
 ```
+Machine 2:
+```
+> ping 192.168.14.2
+```
+
 
 ## 3. ICMP scan/host discovery with Nmap
 To conduct ICMP Scan or host discovery with Nmap, type the following command in the terminal of one of the Kali Linux CLI
